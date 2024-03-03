@@ -247,7 +247,16 @@ bindsym $mod+r mode "resize"
 bar {
   swaybar_command waybar
 }
+for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
 
+# exec "export SDL_VIDEODRIVER=wayland"
+# exec "export _JAVA_AWT_WM_NONREPARENTING=1"
+# exec "export QT_QPA_PLATFORM=wayland"
+# exec "export XDG_CURRENT_DESKTOP=sway"
+# exec "export XDG_SESSION_DESKTOP=sway"
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 # Master stack layout
 #exec_always autotiling-rs
 
