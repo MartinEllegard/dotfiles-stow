@@ -14,6 +14,3 @@ git clone https://github.com/martinellegard/dotfiles-stow.git
 cd dotfiles-stow
 stow .
 ```
-
-Dotfiles for arch using stow
-
