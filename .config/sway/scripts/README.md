@@ -1,4 +1,12 @@
-## Launching waybar with sway config
-This requires you to create a symlink from waybar-sway.sh to ~/.locla/bin/
+# Sway
 
-ln -s ~/.config/sway/scripts/waybar-sway.sh ~/.local/bin/waybar-sway.sh
+## Screen capture
+you will need to add this env variables to your /etc/profile :
+
+```bash
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
+export QT_QPA_PLATFORM=wayland
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_DESKTOP=sway
+```
