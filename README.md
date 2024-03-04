@@ -21,6 +21,6 @@ Almost complete
 ## Hyprland
 TODO
 ## Color-scheme
-1.
+1. Gruvbox
 ![color-scheme-picture](color-scheme.png)
 
