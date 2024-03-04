@@ -1,0 +1,121 @@
+* {
+    font:   "RobotoMono Nerd Font 11";
+    fg: #ebdbb2;
+    fgactive: #fe8019;
+    bg: #282828;
+    bgdim: #1d2021;
+    bgbright: #3c3836;
+
+    background-color: transparent;
+    text-color: @fg;
+
+    margin:     0;
+    padding:    7;
+    spacing:    0;
+}
+
+window {
+    location:       center;
+    width:          550;
+    y-offset:       0;
+
+    border:         3;
+    border-color:   @fgactive;
+
+    background-color:   @bg;
+}
+
+configuration {
+    drun {
+        display-name: "";
+    }
+
+    run {
+        display-name: "";
+    }
+
+    window {
+        display-name: "";
+    }
+
+    ssh {
+        display-name: "";
+    }
+
+    filebrowser {
+        display-name: "";
+    }
+
+    emoji {
+        display-name: "😀";
+    }
+
+    calc {
+        display-name: "";
+    }
+}
+
+inputbar {
+    spacing:    8px; 
+    padding:    8px;
+
+    background-color:   @bgdim;
+}
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @fgactive;
+}
+
+textbox {
+    padding:            8px;
+    background-color:   @bgdim;
+}
+
+listview {
+    padding:    4px 0;
+    lines:      10;
+    columns:    1;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    5px;
+    spacing:    5px;
+}
+
+element normal normal {
+    text-color: @fg;
+}
+
+element normal urgent {
+    text-color: @fg;
+}
+
+element normal active {
+    text-color: @fgactive;
+}
+
+element selected {
+    text-color: @bg;
+}
+
+element selected normal, element selected active {
+    background-color:   @fgactive;
+}
+
+element selected urgent {
+    background-color:   @fgactive;
+}
+
+element-icon {
+    size:   1.3em;
+}
+
+element-text {
+    text-color: inherit;
+}

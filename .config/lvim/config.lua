@@ -116,7 +116,7 @@ lvim.plugins = {
     {
         -- "catppuccin/nvim",
         -- "neanias/everforest-nvim",
-	"ellisonleao/gruvbox.nvim",
+        "ellisonleao/gruvbox.nvim",
         "github/copilot.vim",
         "wakatime/vim-wakatime",
         --"NLKNguyen/papercolor-theme"
