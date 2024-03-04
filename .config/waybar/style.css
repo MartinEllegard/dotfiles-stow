@@ -21,6 +21,9 @@
 
 window#waybar {
     background: rgba(0, 0, 0, 0);
+    /* background: @bg; */
+    margin:0;
+    padding:0;
     color: @fg;
 }
 
@@ -57,7 +60,7 @@ window#waybar {
 }
 
 #window{
-    border-radius: 15px;
+    /* border-radius: 15px; */
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -65,7 +68,7 @@ window#waybar {
 #network {
   padding-left: 15px;
   padding-right: 2px;
-  border-radius: 15px 0px 0px 15px;
+  /* border-radius: 15px 0px 0px 15px; */
 }
 
 #network{
@@ -118,14 +121,14 @@ window#waybar {
 
 #tray {
   padding-right: 15px;
-  border-radius: 0px 15px 15px 0px;
+  /* border-radius: 0px 15px 15px 0px; */
   margin-right: 10px
 }
 
 #workspaces {
     background: @bg;
     margin-left: 10px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 #workspaces button {
