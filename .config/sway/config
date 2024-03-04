@@ -48,33 +48,23 @@ for_window [app_id="dota2"] floating enable
 # list monitors with: swaymsg -t get_outputs
 # all monitors: output *
 #output * pos 0,0 res 3440x1440@99.982hz bg ~/.config/wallpapers/Street.jpg fill
+output eDP-1 pos 0,0 res 1920x1080 bg ~/.config/wallpapers/ultrawide/flowers.png fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 ### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
 exec_always swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
          timeout 350 'swaymsg "output * dpms off"' \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
-# lock screen before suspend. Use loginctl lock-session to lock your screen.
-# exec swayidle -w timeout 300 'swaylock -f -c 000000' timeout 350 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
-# exec swayidle lock 'swaymsg "output * dpms on"&& swaylock' unlock 'kill -s 1 $(pgrep swaylock)'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+
+### Set gtk theme
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    #gsettings set $gnome-schema gtk-theme 'Noita'
-    #gsettings set $gnome-schema icon-theme 'Numix'
+    gsettings set $gnome-schema gtk-theme 'gruvbox-dark-gtk'
+    gsettings set $gnome-schema icon-theme 'oomox-gruvbox-dark'
+    gsettings set $gnome-schema color-scheme 'prefer-dark'
     #gsettings set $gnome-schema cursor-theme 'Neutral_Plus'
     gsettings set $gnome-schema font-name 'RobotoMono Nerd Font 9'
     gsettings set $gnome-schema monospace-font-name 'RobotoMono Nerd Font 11'
@@ -101,9 +91,7 @@ input "1739:52545:SYNA7DB5:00_06CB:CD41_Touchpad" {
 # Read `man 5 sway-input` for more information about this section.
 
 ### Key bindings
-#
-# Basics:
-#
+
 # Start a terminal
 bindsym $mod+t exec $term
 
@@ -269,4 +257,4 @@ exec foot --server
 # Hide away cursor after 4 secs idle, put back to the screen on mouse active
 #exec hideaway 4 10000 10000 -512 -256
 
-#include colors/catppuccin_mocha
+include colors/gruvbox
