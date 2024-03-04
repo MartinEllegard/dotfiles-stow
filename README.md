@@ -17,4 +17,10 @@ stow .
 ## Sway
 ![sway picture](sway.png)
 ## I3
+Almost complete
+## Hyprland
+TODO
+## Color-scheme
+1.
+![color-scheme-picture](color-scheme.png)
 
