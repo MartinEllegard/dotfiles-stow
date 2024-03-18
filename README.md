@@ -39,8 +39,10 @@ Almost complete
 ## Hyprland
 
 TODO
+
 ## Color-scheme
 
 1. Gruvbox
 ![color-scheme-picture](color-scheme.png)
+2. TODO: Catpouccin Mocha(better support)
 
