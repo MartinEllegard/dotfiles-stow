@@ -4,9 +4,11 @@
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 
 #Built in keyboard options
-input "1:1:AT_Translated_Set_2_keyboard" {
+input * {
     xkb_layout "no",
     xkb_options caps:escape,
+    repeat_rate 50
+    repeat_delay 200
 }
 
 # Corne Keyboard options

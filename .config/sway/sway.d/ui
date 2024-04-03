@@ -1,5 +1,5 @@
 # Font
-font pango: RobotoMono Nerd Font:style=Regular 13
+font pango: JetBrainsMono Nerd Font:style=Regular 13
 
 # Window borders
 default_border pixel 2

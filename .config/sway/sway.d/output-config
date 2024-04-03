@@ -7,14 +7,16 @@
 set $laptop eDP-1
 
 
-# output HDMI-1 pos 0,0 res 3440x1440@99.982hz bg ~/.config/wallpapers/ultrawide/flowers.jpg fill
-output eDP-1 pos 0,0 res 1920x1080 bg ~/.config/wallpapers/ultrawide/flowers.png fill
+output HDMI-1 pos 0,0 res 3440x1440@29.985hz
+output eDP-1 pos 1000,1440 res 1920x1080 
 
+# Set bg
+output * bg ~/.config/wallpapers/ultrawide/flowers.png fill
 ### Idle configuration
 exec_always swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
-         timeout 350 'swaymsg "output * dpms off"' \
-              resume 'swaymsg "output * dpms on"' \
+         # timeout 350 'swaymsg "output * dpms off"' \
+              # resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 
 ### Handle Clamshell mode (lid open/close)
